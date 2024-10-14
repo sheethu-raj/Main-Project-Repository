@@ -1,0 +1,32 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "homepage": "https://sheethu-raj.github.io/Bootcamp-Projects-To-Do-App",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "type":"module",
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

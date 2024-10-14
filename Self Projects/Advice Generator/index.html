@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+
+  <div class="box">
+    <div class="title">
+      <p id="advice-no">Advice #177</p>
+    </div>
+
+    <p class="advice" id="advice">
+      "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+    </p>
+
+    <div class="divider">
+      <img src="pattern-divider-desktop.svg">
+    </div>
+
+    <div class="btn" id="btn">
+      <img src="icon-dice.svg">
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const advno = document.getElementById('advice-no');
+    const quote = document.getElementById('advice');
+    const buttn = document.getElementById('btn');
+
+    async function adviceGenerate()
+    {
+      const data = await fetch("https://api.adviceslip.com/advice");
+      const {slip} = await data.json();
+
+      advno.innerText =  `Advice #${slip.id}`;
+      quote.innerText = `"${slip.advice}"`;
+    }
+
+    buttn.addEventListener("click", adviceGenerate);
+  </script>
+</body>
+</html>

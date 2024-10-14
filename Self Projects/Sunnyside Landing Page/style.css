@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-image: url(d-image-header.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header .header-text {
+  text-align: center;
+}
+
+.header .header-text h1 {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  letter-spacing: 7px;
+  margin-top: 1rem;
+}
+
+.header .header-text img {
+  margin-top: 2rem;
+  width: 22px;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo img {
+  width: 120px;
+}
+
+.navbar .list ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar .list ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar .list ul li a:hover {
+  text-transform: uppercase;
+  color: rgb(111, 207, 255);
+  border: 1px solid rgb(111, 207, 255);
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  background-color: rgb(111, 207, 255);
+}
+
+/* Section Styling */
+section {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  justify-content: center;
+}
+
+section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*----section 1----*/
+.sect-1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0; 
+  }
+  
+  .sect-1 .left {
+	flex-basis: 50%;
+	text-align: left;
+	padding-left: 20px; 
+  }
+  
+  .sect-1 .left h2 {
+	font-size: 50px;
+	font-family: 'Fraunces', serif;
+	font-weight: 900;
+	margin-bottom: 15px; 
+  }
+  
+  .sect-1 .left p {
+	font-size: 18px;
+	color: rgb(153, 150, 156);
+	margin-bottom: 15px; 
+	line-height: 1.6;
+  }
+  
+  .sect-1 .left a {
+	text-decoration: none;
+	font-family: 'Fraunces', serif;
+	font-size: 15px;
+	font-weight: 900;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 20px;
+	background-color: rgb(249, 208, 1);
+	display: inline-block;
+	margin-top: 15px; 
+  }
+  
+  .sect-1 .right {
+	flex-basis: 50%;
+  }
+  
+  .sect-1 .right img {
+	width: 100%;
+	object-fit: cover;
+	margin: 0; 
+  }
+  
+  /*----section 2----*/
+  .sect-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0; 
+  }
+  
+  .sect-2 .left {
+	flex-basis: 50%;
+  }
+  
+  .sect-2 .left img {
+	width: 100%;
+	object-fit: cover;
+	margin-top: -7px; 
+  }
+  
+  .sect-2 .right {
+	flex-basis: 50%;
+	text-align: left;
+	padding-left: 20px; 
+  }
+  
+  .sect-2 .right h2 {
+	font-size: 50px;
+	font-family: 'Fraunces', serif;
+	font-weight: 900;
+	margin-bottom: 15px; 
+  }
+  
+  .sect-2 .right p {
+	font-size: 18px;
+	color: rgb(153, 150, 156);
+	margin-bottom: 15px; 
+	line-height: 1.6;
+  }
+  
+  .sect-2 .right a {
+	text-decoration: none;
+	font-family: 'Fraunces', serif;
+	font-size: 15px;
+	font-weight: 900;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 20px;
+	background-color: rgb(255, 122, 108);
+	display: inline-block;
+	margin-top: 15px; 
+  }
+  
+  /*----section 3----*/
+  .sect-3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0; 
+  }
+  
+  .sect-3 .left, .sect-3 .right {
+	flex-basis: 50%;
+	text-align: center;
+	padding: 0; 
+  }
+  
+  .sect-3 .left img, .sect-3 .right img {
+	width: 100%;
+	height: auto;
+	margin-top: -10px; 
+  }
+  
+  .sect-3 .left h2, .sect-3 .right h2 {
+	font-size: 38px;
+	font-family: 'Fraunces', serif;
+	font-weight: 900;
+	margin-top: 15px; 
+  }
+  
+  .sect-3 .left p, .sect-3 .right p {
+	font-size: 18px;
+	color: rgb(153, 150, 156);
+	margin-top: 10px; 
+	line-height: 1.6;
+  }
+  
+
+/* Testimonials */
+
+.testimonials {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.testimonials .title {
+	position: absolute;
+	margin-top: -500px;
+	font-family: 'Fraunces', serif;
+	font-size: 25px;
+	font-weight: 700;
+	color: rgb(167, 169, 174);
+	letter-spacing: 4px;
+}
+
+.testimonials .clients {
+  display: flex;
+  gap: 15rem;
+  margin-top: 100px;
+}
+
+.testimonials .clients .card {
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.testimonials .clients .card img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonials .clients .card .name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 4rem 0;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(144, 212, 197);
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: -150px;
+}
+
+footer .new-logo {
+  margin-top: 30px;
+}
+
+footer .list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer .list li {
+  list-style: none;
+}
+
+footer .list li a {
+  color: rgb(70, 138, 123);
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer .list li a:hover {
+  color: white;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .sect-1, .sect-2 {
+    flex-direction: column;
+  }
+
+  .sect-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}

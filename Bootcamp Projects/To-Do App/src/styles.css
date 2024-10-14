@@ -1,0 +1,132 @@
+body {
+    background-color: #74b9ff;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Architects Daughter", cursive;
+    color: hsl(198, 1%, 29%);
+    text-align: center;
+    font-size: 130%;
+    margin: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffeaa7;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    background-image: radial-gradient(circle, #fab1a0 15%, transparent 0);
+    background-size: 40px 40px;
+    transition: all 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heading {
+    margin-bottom: 1.5rem;
+  }
+  
+  .heading h1 {
+    font-size: 2.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    background-color: #ff7675;
+    color: #fff;
+    transform: rotate(-3deg);
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .heading h1:hover {
+    transform: rotate(3deg);
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #a29bfe;
+    margin-bottom: 1.5rem;
+    color: white;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .form input:focus {
+    box-shadow: inset 0px 6px 10px rgba(0, 0, 0, 0.3), 0px 0px 8px #74b9ff;
+    outline: none;
+  }
+  
+  button {
+    background-color: #55efc4;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00cec9;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    font-family: "Architects Daughter", cursive;
+    color: hsl(198, 1%, 29%);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    text-align: left;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #fd79a8;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  li button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #d63031;
+    transition: color 0.3s ease;
+  }
+  
+  li button:hover {
+    color: #e74c3c;
+  }
+  
